@@ -4,3 +4,9 @@ pandas
 numpy
 wandb
 xgboost
+google-cloud-mlflow
+langchain
+openai
+datasets
+qdrant-client
+tiktoken
