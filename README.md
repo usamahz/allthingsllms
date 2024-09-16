@@ -1,11 +1,12 @@
-# Project Name
+# Machine Learning Experimentation Pipeline
 
 ## Overview
-This project is designed to [brief description of the project]. It leverages various technologies and tools to achieve its goals.
+This project implements a robust machine learning experimentation pipeline that integrates various tools and frameworks. It emphasizes principles of reproducibility, tracking, and collaboration, enabling data scientists and machine learning engineers to efficiently manage their experiments.
 
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
+- [Pipeline Overview](#pipeline-overview)
 - [Configuration](#configuration)
 - [Development](#development)
 - [Contributing](#contributing)
@@ -15,7 +16,17 @@ This project is designed to [brief description of the project]. It leverages var
 To install the necessary dependencies, run:
 
 ## Usage
-To start the application, use the following command:
+To start the experimentation process, run the following command:
+
+## Pipeline Overview
+The pipeline consists of the following key components:
+
+1. **Data Acquisition**: Fetch datasets using `fetch_openml` or other data sources.
+2. **Data Preprocessing**: Split the data into training and testing sets using `train_test_split`.
+3. **Model Training**: Train models using various algorithms (e.g., `RandomForestRegressor`, `LogisticRegression`).
+4. **Experiment Tracking**: Log parameters, metrics, and models using MLflow and Weights & Biases (W&B) for reproducibility and analysis.
+5. **Model Evaluation**: Evaluate model performance using metrics like Mean Squared Error (MSE) and classification reports.
+6. **Deployment**: Deploy models to cloud platforms or local environments as needed.
 
 ## Configuration
 Configuration files are located in the `gcp` directory. Key files include:
@@ -38,10 +49,7 @@ Configuration files are located in the `gcp` directory. Key files include:
     ```
 
 ### Running Locally
-To run the application locally, use:
-
-### Deployment
-To deploy the application, use the provided deployment script:
+To run the application locally, ensure that the MLflow tracking server is running on `http://127.0.0.1:5001`.
 
 ## Contributing
 Contributions are welcome! Please follow these steps:
