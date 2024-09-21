@@ -1,8 +1,7 @@
 mlflow
 scikit-learn
 pandas
-numpy
-wandb
+numpywandb
 xgboost
 google-cloud-mlflow
 langchain
@@ -10,3 +9,9 @@ openai
 datasets
 qdrant-client
 tiktoken
+langchain
+openai
+qdrant-client
+scikit-learn
+pandas
+numpy
